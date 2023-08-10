@@ -1,0 +1,12 @@
+<div *ngFor="let blog of blogs" class="article">
+    <div class="articleImage">
+      <img src={{blog.componentData.imageLink}}>
+    </div>
+    <div class="articleBody">
+      <span>{{blog.componentData.date|date}}</span>
+      <h1>{{blog.componentData.title}}</h1>
+      <p>{{blog.componentData.subTitle}}</p>
+      <a routerLink='/article/{{blog.id}}'>{{blog.componentData.author}}</a>
+    </div>
+</div>
+
